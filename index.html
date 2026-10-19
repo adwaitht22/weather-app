@@ -11,17 +11,18 @@
         <h1>Weather App</h1>
         <form id="search-form">    
             <input type="text" id="city-input" placeholder="Search city.....">
-            <button type="submit">Search</button>
+            <button type="button" id="unit-toggle">Switch °C / °F</button>
         </form>
+        <p id="message"></p>
         <section class="weather-card">
 
             <div class="main-info">
                 <div>
                 <h2 id="city-name">Your City</h2>
-                <p class="temp"><span id="temperature">29</span>°C</p>
+                <p class="temp"><span id="temperature">29</span><span id="unit">°C</span></p>°C</p>
                 <p id="condition">Cloudy</p>
                 </div>
-                <div class="icon">☁️</div>
+                <div class="icon" id="weather-icon">☁️</div>
             </div>
 
             <div class="details">

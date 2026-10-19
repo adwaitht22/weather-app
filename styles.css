@@ -106,3 +106,25 @@ button:hover{
     font-size: 1.1rem;
     font-weight: 600;
 } 
+
+#message{
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #6b7694;
+}
+
+#message.error{
+    color: #d93025;
+}
+
+#unit-toggle{
+    margin-top: 16px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    background-color: white;
+    color: #3b6cff;
+}
+
+#unit-toggle:hover{
+    background-color: #f0f4ff;
+}
