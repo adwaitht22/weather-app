@@ -1,4 +1,4 @@
-# Weather App
+# SkyVora-the weather companion
 
 A responsive weather dashboard built with HTML, CSS, and JavaScript. Search any city and see its live weather.
 
