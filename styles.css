@@ -26,11 +26,16 @@ body {
 }
 
 h1 {
-    font-size: 1.2rem;
-    margin-bottom: 16px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Search */
+.logo {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
 #search-form {
     display: flex;
     gap: 8px;
@@ -70,7 +75,6 @@ button:active {
     transform: scale(0.96);
 }
 
-/* Message (loading and errors) */
 #message {
     margin-top: 12px;
     font-size: 0.9rem;
@@ -81,7 +85,6 @@ button:active {
     color: #d93025;
 }
 
-/* Weather card */
 .weather-card {
     background: linear-gradient(135deg, #dbe9ff, #efe6ff);
     border-radius: 16px;
@@ -107,7 +110,8 @@ button:active {
 }
 
 .details {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-top: 20px;
 }
@@ -138,7 +142,6 @@ button:active {
     font-weight: 600;
 }
 
-/* °C / °F toggle */
 #unit-toggle {
     margin-top: 16px;
     padding: 6px 12px;
@@ -151,7 +154,6 @@ button:active {
     background-color: #f0f4ff;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -162,10 +164,34 @@ button:active {
     50%      { transform: translateY(-8px); }
 }
 
-/* Weather-based themes (keep these last) */
+#recent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.chip {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    background-color: #eef2ff;
+    color: #3b6cff;
+    border-radius: 999px;
+}
+
+.chip:hover {
+    background-color: #dfe7ff;
+}
+
 body.sunny  { background: linear-gradient(135deg, #f6d365, #fda085); }
 body.cloudy { background: linear-gradient(135deg, #bdc3c7, #6a7f9a); }
 body.foggy  { background: linear-gradient(135deg, #cfd9df, #a6b3bf); }
 body.rainy  { background: linear-gradient(135deg, #4b6cb7, #182848); }
 body.snowy  { background: linear-gradient(135deg, #e6dada, #7fa6c9); }
 body.stormy { background: linear-gradient(135deg, #373b44, #4286f4); }
+.aqi-good      { color: #2e9e4f; }
+.aqi-moderate  { color: #d4a017; }
+.aqi-poor      { color: #e67e22; }
+.aqi-unhealthy { color: #d93025; }
+.aqi-very      { color: #8e44ad; }
+.aqi-hazardous { color: #7b1e3a; }

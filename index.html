@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather app</title>
+    <title>SkyVora</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="app">
-        <h1>Weather App</h1>
+        <h1><span class="logo">🌤️</span> SkyVora</h1>
 
         <form id="search-form">
             <input type="text" id="city-input" placeholder="Search city.....">
@@ -17,6 +17,7 @@
         </form>
 
         <p id="message"></p>
+        <div id="recent"></div>
 
         <section class="weather-card">
             <div class="main-info">
@@ -37,6 +38,15 @@
                     <span class="label">Wind</span>
                     <span class="value" id="wind">12 km/h</span>
                 </div>
+                <div class="detail-box">
+                    <span class="label">Visibility</span>
+                    <span class="value" id="visibility">10 km</span>
+                </div>
+                <div class="detail-box">
+                    <span class="label">Air Quality</span>
+                    <span class="value" id="aqi">42</span>
+                </div>
+            </div>
             </div>
 
             <button type="button" id="unit-toggle">Switch °C / °F</button>
