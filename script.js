@@ -73,3 +73,27 @@ async function getWeather(city) {
         condition.textContent = getCondition(current.weather_code);
         weatherIcon.textContent = getIcon(current.weather_code);
         humidity.textContent = current.relative_humidity_2m + "%";
+        wind.textContent = current.wind_speed_10m + " km/h";
+        message.textContent = "";
+    } catch (error) {
+        message.textContent = error.message;
+        message.classList.add("error");
+    }
+}
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const city = cityInput.value.trim();
+
+    if (city === "") {
+        message.textContent = "Please enter a city name.";
+        message.classList.add("error");
+        return;
+    }
+    getWeather(city);
+});
+
+unitToggle.addEventListener("click", function () {
+    isCelsius = !isCelsius;
+    showTemperature();
+});
