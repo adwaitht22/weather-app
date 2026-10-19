@@ -33,6 +33,16 @@ function getIcon(code) {
     return "⛈️";
 }
 
+function getTheme(code) {
+    if (code === 0) return "sunny";
+    if (code <= 3) return "cloudy";
+    if (code <= 48) return "foggy";
+    if (code <= 67) return "rainy";
+    if (code <= 77) return "snowy";
+    if (code <= 82) return "rainy";
+    return "stormy";
+}
+
 function showTemperature() {
     if (isCelsius) {
         temperature.textContent = Math.round(currentTempC);
