@@ -37,7 +37,7 @@ A responsive weather dashboard built with HTML, CSS, and JavaScript. Search any 
 
 ## Screenshot
 
-<img width="685" height="597" alt="image" src="https://github.com/user-attachments/assets/d68d9ca4-6bcb-423e-8795-acf1e6e26a65" />
+<img width="415" height="587" alt="image" src="https://github.com/user-attachments/assets/4bba28e3-0011-4394-8d01-84c0bef4f118" />
 
 
 ## Run Locally
