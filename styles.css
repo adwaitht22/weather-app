@@ -195,3 +195,29 @@ body.stormy { background: linear-gradient(135deg, #373b44, #4286f4); }
 .aqi-unhealthy { color: #d93025; }
 .aqi-very      { color: #8e44ad; }
 .aqi-hazardous { color: #7b1e3a; }
+
+
+/*fixing bar search overflow in mobile view*/
+#search-form {
+    width: 100%;
+}
+
+#city-input {
+    min-width: 0;
+    font-size: 1rem;
+}
+
+#search-form button {
+    flex-shrink: 0;
+}
+
+/*smaller padding and font sizes for mobile view*/
+@media (max-width: 420px) {
+    .app {
+        padding: 18px;
+    }
+
+    .temp {
+        font-size: 3rem;
+    }
+}
